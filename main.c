@@ -25,6 +25,7 @@ extern int main(int argc, char *argv[], char *envp[]) {
 	dollarzero = argv[0];
 	rc_pid = getpid();
 	dashell = (*argv[0] == '-'); /* Unix tradition */
+	dashell = TRUE;
 	while ((c = rc_getopt(argc, argv, "c:deiIlnopsvx")) != -1)
 		switch (c) {
 		case 'c':
